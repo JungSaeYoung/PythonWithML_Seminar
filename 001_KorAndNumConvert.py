@@ -85,3 +85,8 @@ print(convert(65535))  # "육만오천오백삼십오"
 print(convert(5510005)) # "오백오십일만오"
 print(convert(123456789))  # "일억이천삼백사십오만육천칠백팔십구"
 print(convert(123456789012)) # "일천이백삼십사억오천육백칠십팔만구천일십이"
+# print(convert("오천이백삼십x"))  
+# # ValueError: Invalid character in Korean number string이 발생하도록 설계했지만 
+# convert에서 먼저 검사하기 때문에 ValueError: Invalid input foramt 발생
+# print(convert("five"))  # ValueError: Invalid input format
+# print(convert(3.14))  # TypeError: Unsupported input type
